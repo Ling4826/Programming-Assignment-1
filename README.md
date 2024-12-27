@@ -50,7 +50,10 @@ Searches for a specific student record using their firstname.
 **Command:**
 ```bash
 java p1 -s <filename>
-Enter FirstName: Name
+```
+```bash
+java p1 -s students.csv
+Enter FirstName:
 ```
 
 ---
