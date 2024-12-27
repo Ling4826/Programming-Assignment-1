@@ -10,7 +10,7 @@ This program is designed to sort and search student data from a CSV file. Follow
 
 ## Supported Commands
 
-### 1. **Sort by Name**
+### 1. **Sort by ID**
 Sorts the student data alphabetically by their first name.
 
 **Command:**
@@ -20,7 +20,7 @@ java p1 -n <filename>
 
 ---
 
-### 2. **Sort by First ID**
+### 2. **Sort by FirstName**
 Sorts the student data numerically by their first ID.
 
 **Command:**
@@ -40,12 +40,13 @@ java p1 -l <filename>
 
 ---
 
-### 4. **Search by First ID**
+### 4. **Search by FirstName**
 Searches for a specific student record using their first ID.
 
 **Command:**
 ```bash
 java p1 -s <filename>
+Enter FirstName: Name
 ```
 
 ---
@@ -65,11 +66,10 @@ To sort by name, use:
 java p1 -n students.csv
 ```
 
-To search for a student by their first ID, use:
+To search for a student by their FirstName, use:
 ```bash
 java p1 -s students.csv
+Enter FirstName: KAN
 ```
 
----
 
-By following these instructions, you will be able to efficiently sort and search student data using this Java program. If you encounter any issues, double-check the formatting of your CSV file and its location.
