@@ -19,6 +19,7 @@ class InputStudent {
 
         // change File to scanned
         Scanner F = new Scanner(file);
+        // check if the file is empty
         if (!F.hasNextLine()) {
             System.out.println("File is not in correct format");
             return;
