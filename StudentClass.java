@@ -56,5 +56,4 @@ public class StudentClass {
         System.out.print("First Name: " + firstName + " ");
         System.out.println("Last Name: " + lastName + " ");
     }
-
 }
