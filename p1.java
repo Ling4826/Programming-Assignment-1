@@ -29,9 +29,6 @@ public class p1 {
             String filename = args[1];
 
             Vector<StudentClass> StudentList = process(filename, 2);
-            for (StudentClass c : StudentList) {
-                c.getStudentInfo();
-            }
 
             displayVector(StudentList);
         } else if (args.length == 2 && args[0].equals("-l")) {
