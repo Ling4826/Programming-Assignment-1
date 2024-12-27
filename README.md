@@ -41,7 +41,7 @@ java p1 -l <filename>
 ---
 
 ### 4. **Search by FirstName**
-Searches for a specific student record using their first ID.
+Searches for a specific student record using their firstname.
 
 **Command:**
 ```bash
