@@ -9,16 +9,17 @@ class InputStudent {
     static Vector<StudentClass> StudentList = new Vector<>();
 
     public InputStudent(String s) throws IOException {
+
         // get file
         File file = new File(s);
         if (!file.exists()) {
-            System.out.println("File not found: " + file.getAbsolutePath());
+
             return;
         }
 
         // change File to scanned
         Scanner F = new Scanner(file);
-
+        System.out.println(F.hasNextLine());
         // Student object and add it to the List.
         while (F.hasNextLine()) {
             // Skip metadata lines until student data starts
@@ -91,10 +92,13 @@ class InputStudent {
                 St.setFirstid(S);
             }
             if (i == 1) {
+
                 St.setid(S);
             } else if (i == 2) {
+
                 St.setFirstName(S);
             } else if (i == 3) {
+
                 St.setLastName(S);
 
             }
@@ -106,6 +110,7 @@ class InputStudent {
 
     // return Vector
     public static Vector<StudentClass> returnVector() {
+
         return StudentList;
     }
 }
