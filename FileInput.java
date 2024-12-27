@@ -13,13 +13,16 @@ class InputStudent {
         // get file
         File file = new File(s);
         if (!file.exists()) {
-
+            System.out.println("File does not exist");
             return;
         }
 
         // change File to scanned
         Scanner F = new Scanner(file);
-        System.out.println(F.hasNextLine());
+        if (!F.hasNextLine()) {
+            System.out.println("File is not in correct format");
+            return;
+        }
         // Student object and add it to the List.
         while (F.hasNextLine()) {
             // Skip metadata lines until student data starts
