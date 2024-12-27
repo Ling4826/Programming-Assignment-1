@@ -40,10 +40,13 @@ public class p1 {
         } else if (args.length == 2 && args[0].equals("-s")) {
             String filename = args[1];
 
-            Vector<StudentClass> StudentList = process(filename, 3);
+            Vector<StudentClass> StudentList = process(filename, 4);
             // try catching index in StudentList
             try {
                 System.out.println("found at index " + StudentList.get(0).getFirstid());
+                System.out.print("Search ID: " + StudentList.get(0).getId() + " ");
+                System.out.print("First Name: " + StudentList.get(0).getFirstName() + " ");
+                System.out.println("Last Name: " + StudentList.get(0).getLastName() + " ");
             } catch (Exception e) {
                 System.out.println("Student not found");
             }
