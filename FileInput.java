@@ -31,7 +31,7 @@ class InputStudent {
             // skip line
             readline(line);
         }
-        F.close();
+
     }
 
     public boolean skipline(String line) {
